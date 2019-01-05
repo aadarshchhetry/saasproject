@@ -41,6 +41,9 @@ gem 'bootstrap-sass', '~> 3.4'
 # Font Awesome gem for icon into the pages
 gem 'font-awesome-sass', '~> 5.6', '>= 5.6.1'
 
+ # jquery gem for the instalation of the js application into the site 
+ gem 'jquery-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

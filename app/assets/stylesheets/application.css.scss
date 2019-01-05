@@ -42,6 +42,15 @@
  	font-family: 'Staatliches', cursive;
  	font-size: 60px;
  }
+/*nav bar changing */
+.navbar-default .navbar-toggle {
+    border : 2px solid white;
+    background-color: white;
+    &:hover, &:focus{
+    	color:#b31217;
+	}
+}
+
 
 /*for the top of the screen callout*/
 .home-top{
@@ -67,6 +76,7 @@
     color: #fff;
     &:hover{
     	opacity: 0.75;
-	color: white;
+	    color : white;
+
 	}
 }
