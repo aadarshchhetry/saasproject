@@ -3,9 +3,11 @@
   <head>
     <title>Simple</title>
     <%= csrf_meta_tags %>
-    
-    <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
-    
+
+    <!-- Google_Fonts here -->
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Staatliches" rel="stylesheet">
+    <!-- Ends here -->
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -22,7 +24,7 @@
           </button>
           <%= link_to root_path, class: "navbar-brand" do %>
             <i class="fa fa-users"></i>
-            DEVMatch
+            DevMatch
           <% end %>
 
         </div>

@@ -31,6 +31,18 @@
 	border: none;
 }
 
+ /*Adding Font for the logo DevMatch*/
+ .navbar-brand{
+ 	font-family: 'Staatliches', cursive;
+ 	font-size: 20px;
+ }
+
+ /*For the main head DevMatch logo in middle of the page*/
+ .tophead{
+ 	font-family: 'Staatliches', cursive;
+ 	font-size: 60px;
+ }
+
 /*for the top of the screen callout*/
 .home-top{
 
@@ -43,6 +55,10 @@
 	padding-bottom: 100px;
 	color: white;
 	/*font-family: 'Thasadith', sans-serif;*/
+}
+
+.afterhead{
+	font-family: 'Caveat', cursive;
 }
 
 /*Navigation and the logo*/
