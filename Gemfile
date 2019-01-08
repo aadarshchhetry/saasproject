@@ -44,6 +44,9 @@ gem 'font-awesome-sass', '~> 5.6', '>= 5.6.1'
  # jquery gem for the instalation of the js application into the site 
  gem 'jquery-rails'
 
+ # Hirb gem for the table view format in the sql database
+ gem 'hirb', '~> 0.7.3'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
