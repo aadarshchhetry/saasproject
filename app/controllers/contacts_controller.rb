@@ -11,6 +11,7 @@ class ContactsController < ApplicationController
 	  	 flash[:danger] = @contact.errors.full_messages.join(", ")
 	     redirect_to new_contacts_path
 	  end
+	  
 	end
 	private
 	  def contact_params

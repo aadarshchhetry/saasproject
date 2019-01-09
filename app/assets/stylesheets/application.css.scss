@@ -74,6 +74,7 @@
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li >a  {
     color: #fff;
+    transition-delay: 0.14s;
     &:hover{
     	opacity: 0.75;
 	    color : white;
