@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Caveat|Staatliches" rel="stylesheet">
     <!-- Ends here -->
+    <!-- W3 link tag for the animation slide -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Ends here -->
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -24,7 +27,7 @@
           </button>
           <%= link_to root_path, class: "navbar-brand" do %>
             <i class="fa fa-users"></i>
-            DevMatch
+            Dev Meetup
           <% end %>
 
         </div>
@@ -36,7 +39,12 @@
         </div><!-- /.navbar-collapse -->
       </div>
     </nav>
-    
+      <!-- This is for the error msg pop on the screen  -->
+      <div class="container w3-animate-top">
+        <% flash.each do |type , msg | %>
+          <%= content_tag :div ,msg, class: "alert alert-#{type}" %>
+        <% end %>
+      </div>
       <%= yield %>
    
   </body>
