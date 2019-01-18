@@ -34,8 +34,9 @@
         </div>
         <div class="collapse navbar-collapse" id="main-nav-collapse">
           <div class="nav navbar-nav navbar-right">
-            <a href="/users/sign_in" class="btn btn-default navbar-btn btn-space">Log In</a>
-            <a href="/users/sign_up" class="btn btn-primary navbar-btn btn-space">Sign Up</a>
+          
+            <%= link_to "Log in", new_user_session_path , class: "btn btn-default navbar-btn btn-space" %>
+            <%= link_to "Sign up", new_user_registration_path , class: "btn btn-default navbar-btn btn-space" %>
           </div>
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "About", about_path %></li>
