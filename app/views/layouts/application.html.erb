@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dev Meetup</title>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google_Fonts here -->
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Staatliches" rel="stylesheet">
+    <!-- Ends here -->
+    <!-- W3 link tag for the animation slide -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Ends here -->
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class='container'>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <%= link_to root_path, class: "navbar-brand" do %>
+            <i class="fa fa-users"></i>
+            Dev Meetup
+          <% end %>
+
+        </div>
+        <div class="collapse navbar-collapse" id="main-nav-collapse">
+          <div class="nav navbar-nav navbar-right">
+          <% if user_signed_in? %>
+            <%= link_to "Log out", destroy_user_session_path , method: :delete , class: "btn btn-default navbar-btn btn-space"  %>
+          <% else %>
+            <%= link_to "Log in", new_user_session_path , class: "btn btn-default navbar-btn btn-space" %>
+            <%= link_to "Sign up", new_user_registration_path , class: "btn btn-default navbar-btn btn-space" %>
+          <% end %>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "About", about_path %></li>
+            <li><%= link_to "Contact us", new_contact_path %></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+      <!-- This is for the error msg pop on the screen  -->
+      <div class="container w3-animate-top">
+        <% flash.each do |type , msg | %>
+          <%= content_tag :div ,msg, class: "alert alert-#{type}" %>
+        <% end %>
+      </div>
+      <%= yield %>
+   
+  </body>
+</html>

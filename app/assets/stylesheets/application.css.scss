@@ -1,0 +1,96 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+  @import 'bootstrap-sprockets';
+  @import 'bootstrap';
+	@import "font-awesome-sprockets";
+	@import "font-awesome";
+	@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
+.navbar{
+	/*Gradient provided by https://uigradients.com/*/
+	background: #e52d27;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*To vanish the border which was ugly*/
+.navbar{
+	border: none;
+}
+
+ /*Adding Font for the logo DevMatch*/
+ .navbar-brand{
+ 	font-family: 'Staatliches', cursive;
+ 	font-size: 20px;
+ }
+
+ /*For the main head DevMatch logo in middle of the page*/
+ .tophead{
+ 	font-family: 'Staatliches', cursive;
+ 	font-size: 60px;
+ }
+/*nav bar changing */
+.navbar-default .navbar-toggle {
+    border : 2px solid white;
+    background-color: white;
+    &:hover, &:focus{
+    	color:#b31217;
+	}
+}
+
+
+/*for the top of the screen callout*/
+.home-top{
+
+	background: #e52d27;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	margin-top: -20px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	color: white;
+	/*font-family: 'Thasadith', sans-serif;*/
+}
+
+.afterhead{
+	font-family: 'Caveat', cursive;
+}
+
+/*Navigation and the logo*/
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li >a  {
+    color: #fff;
+    transition-delay: 0.14s;
+    &:hover{
+    	opacity: 0.75;
+	    color : white;
+
+	}
+}
+
+// For margin in the btn login and sign up
+ .btn-space{
+ margin : 5px;
+ }
+
+// No alert notice on logout and log in 
+.alert-notice{
+	display : none;
+}
