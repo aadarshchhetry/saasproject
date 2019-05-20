@@ -22,7 +22,7 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Devise for the user authentication
-gem 'devise', '~> 4.5'
+gem "devise", ">= 4.6.0" 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -38,7 +38,7 @@ gem 'bootsnap', require: false
 
 #Twitter bootstrap to make the better UI for the app
 
-gem 'bootstrap-sass', '~> 3.4'
+gem "bootstrap-sass", ">= 3.4.1"
 
 # Font Awesome gem for icon into the pages
 gem 'font-awesome-sass', '~> 5.6', '>= 5.6.1'
