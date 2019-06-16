@@ -2,5 +2,24 @@
 
 	<h1 class="tophead">Developers MEETUP</h1>
 	<h3 class="afterhead">Welcome! This is the site where developers becomes entrepreneurs</h3>
-
+	<div class="home-callout text-center container-fluid">
 </div>
+	<div class="container home-signup-links">
+	  <div class="row">
+	    <div class="col-md-6">
+	      <div class="well">
+	        <h2 class="text-center plan-text">Basic Membership</h2>
+	        <h4 class="plan-text">Sign up for free and get basic access to the community.</h4>
+	        <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
+	      </div>
+	    </div>
+	    <div class="col-md-6">
+	      <div class="well">
+	        <h2 class="text-center plan-text">Pro Membership</h2>
+	        <h4 class="plan-text">Sign up for the pro account for $10/month and get access to the community and contact information!</h4>
+	        <%= link_to "Sign up with Pro", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
