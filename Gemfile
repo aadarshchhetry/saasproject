@@ -23,6 +23,11 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Use Devise for the user authentication
 gem 'devise', '~> 4.5'
+# Use Stripe for payment processing
+gem 'stripe', '1.48.0'
+# Use Figaro for ENV variables
+gem 'figaro', '1.1.1'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
