@@ -25,7 +25,7 @@ class ContactsController < ApplicationController
     # If fail to save then flash hash the message  
 	  	 flash[:danger] = @contact.errors.full_messages.join(", ")
 	# Redirect to the '/contact-us'
-	     redirect_to new_contacts_path
+	     redirect_to new_contact_path
 	  end
 	  
 	end

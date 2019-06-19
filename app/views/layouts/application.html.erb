@@ -51,7 +51,7 @@
       </div>
     </nav>
       <!-- This is for the error msg pop on the screen  -->
-      <div class="container w3-animate-top">
+      <div class="container w3-animate-top flash-container">
         <% flash.each do |type , msg | %>
           <%= content_tag :div ,msg, class: "alert alert-#{type}" %>
         <% end %>
@@ -60,3 +60,4 @@
    
   </body>
 </html>
+<div class="container ">
